@@ -5469,15 +5469,20 @@ react-is@^16.13.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-native-base64@0.2.1:
+react-native-aes-crypto@^2.1.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/react-native-aes-crypto/-/react-native-aes-crypto-2.1.1.tgz#371100ad322195f2792e2b365923620599d8abc2"
+  integrity sha512-huAt7k43myFiY0bPnvoaCP0oBjTMw4VsL2mjkmCPzzDA56Sm3ps5xXIejPo5Z9qfnei9iijHzATV8eRNMEPtbQ==
+
+react-native-base64@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/react-native-base64/-/react-native-base64-0.2.1.tgz#3d0e73a649c4c0129f7b7695d3912456aebae847"
   integrity sha512-eHgt/MA8y5ZF0aHfZ1aTPcIkDWxza9AaEk4GcpIX+ZYfZ04RcaNahO+527KR7J44/mD3efYfM23O2C1N44ByWA==
 
-react-native-bootpay-api@4.1.55:
-  version "4.1.55"
-  resolved "https://registry.yarnpkg.com/react-native-bootpay-api/-/react-native-bootpay-api-4.1.55.tgz#f7fe2d7f1eccb6c1e0648d1b185f756c5c4dbabb"
-  integrity sha512-U11EeiQVTu2wlJBOVZCFq9Fu7cGBdpIv1HzUXWNF9PH1ZSo4WizTTRu8O0Brhq685zPA9vig7nG3harQu89Utg==
+react-native-bootpay-api@4.2.6:
+  version "4.2.6"
+  resolved "https://registry.yarnpkg.com/react-native-bootpay-api/-/react-native-bootpay-api-4.2.6.tgz#54fbc2fd05e35e62c6a03c24d4e8ea1cf8408611"
+  integrity sha512-X4SUMougBxnXoIhc2ul2jVKm1y1E/x4rX1iutO7NhN3C6fhOPNOA5yXpGyy7zw/GoblxLn5Zh+OLppL2fjpmYA==
   dependencies:
     escape-string-regexp "2.0.0"
     invariant "2.2.4"
@@ -5492,25 +5497,25 @@ react-native-codegen@^0.0.17:
     jscodeshift "^0.13.1"
     nullthrows "^1.1.1"
 
-react-native-device-info@10.0.2:
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-10.0.2.tgz#17cd96df277cca5a22fb80409527c181a08d4ed1"
-  integrity sha512-6XY8EctYqNEX6EHDoHxz3yONOYxCHKrgEdStP7HZDYzFXb1JB5BFt7UbXDWrmihXUZDv06sBsjN26+Tp0EajXw==
+react-native-device-info@^8.7.0:
+  version "8.7.1"
+  resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-8.7.1.tgz#fbb06f87dbbc4423abe713874699fb2e6e99fd15"
+  integrity sha512-cVMZztFa2Qn6qpQa601W61CtUwZQ1KXfqCOeltejAWEXmgIWivC692WGSdtGudj4upSi1UgMSaGcvKjfcpdGjg==
 
 react-native-gradle-plugin@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.0.6.tgz#b61a9234ad2f61430937911003cddd7e15c72b45"
   integrity sha512-eIlgtsmDp1jLC24dRn43hB3kEcZVqx6DUQbR0N1ABXGnMEafm9I3V3dUUeD1vh+Dy5WqijSoEwLNUPLgu5zDMg==
 
-react-native-sensitive-info@5.5.8:
+react-native-sensitive-info@^5.5.8:
   version "5.5.8"
   resolved "https://registry.yarnpkg.com/react-native-sensitive-info/-/react-native-sensitive-info-5.5.8.tgz#6ebb67eed83d1c2867bd435630ef2c41eef204ed"
   integrity sha512-p99oaEW4QG1RdUNrkvd/c6Qdm856dQw/Rk81f9fA6Y3DlPs6ADNdU+jbPuTz3CcOUJwuKBDNenX6LR9KfmGFEg==
 
-react-native-webview-bootpay@11.22.85:
-  version "11.22.85"
-  resolved "https://registry.yarnpkg.com/react-native-webview-bootpay/-/react-native-webview-bootpay-11.22.85.tgz#49a41229c03880f665f72e4394f95c25d03d3b84"
-  integrity sha512-lDP7s/By4jMgQEjTCiDPZ9uz7hUuqQJWDfruICdl6OZwUGBPpKRrXHymUeaUESFEdpqx7SSmebfPlrmkx3GXOw==
+react-native-webview-bootpay@11.22.87:
+  version "11.22.87"
+  resolved "https://registry.yarnpkg.com/react-native-webview-bootpay/-/react-native-webview-bootpay-11.22.87.tgz#d5855b742f36daa83c10126a5907fc8d3f47f6ea"
+  integrity sha512-QClvtFfNsIsHuWPFkWmts4pckHPq6u6kAg6Dk8fXoUB2Ac3Z6nf4ooInl6xE2O+qS2nH+Pj+C9lo/a5nDkNYZw==
   dependencies:
     escape-string-regexp "2.0.0"
     invariant "2.2.4"
