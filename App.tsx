@@ -158,24 +158,24 @@ export default function App() {
 
   }
 
-  const onCancel = (data: string) => {
+  const onCancel = (data: Object) => {
     console.log('-- cancel', data); 
   }
 
-  const onError = (data: string) => {
+  const onError = (data: Object) => {
     console.log('-- error', data);
   }
 
-  const onIssued = (data: string) => {
+  const onIssued = (data: Object) => {
     console.log('-- issued', data);
   }
 
-  const onConfirm = (data: string) => {
-    console.log('-- confirm', data);
-    if(bootpay != null && bootpay.current != null) bootpay.current.transactionConfirm(data);
+  const onConfirm = (data: Object) => {
+    console.log('-- confirm', data); 
+    return true 
   }
 
-  const onDone = (data: string) => {
+  const onDone = (data: Object) => {
     console.log('-- done', data);
   }
 
@@ -197,19 +197,20 @@ export default function App() {
       </TouchableOpacity> 
 
       <Bootpay 
-      ref={bootpay}
-      ios_application_id={'5b8f6a4d396fa665fdc2b5e9'}
-      android_application_id={'5b8f6a4d396fa665fdc2b5e8'} 
-      // ios_application_id={'5b9f51264457636ab9a07cdd'}
-      // android_application_id={'5b9f51264457636ab9a07cdc'} 
-      onCancel={onCancel}
-      onError={onError}
-      onIssued={onIssued}
-      onConfirm={onConfirm}
-      onDone={onDone}
-      onClose={onClose} 
+        ref={bootpay}
+        ios_application_id={'5b8f6a4d396fa665fdc2b5e9'}
+        android_application_id={'5b8f6a4d396fa665fdc2b5e8'} 
+        // ios_application_id={'5b9f51264457636ab9a07cdd'}
+        // android_application_id={'5b9f51264457636ab9a07cdc'} 
+        onCancel={onCancel}
+        onError={onError}
+        onIssued={onIssued}
+        onConfirm={onConfirm}
+        onDone={onDone}
+        onClose={onClose} 
 
       /> 
+    
       <TouchableOpacity
           style={styles.button}
           onPress={goBootpaySubscriptionTest}

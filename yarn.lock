@@ -5471,13 +5471,14 @@ react-native-base64@^0.2.1:
   resolved "https://registry.npmjs.org/react-native-base64/-/react-native-base64-0.2.1.tgz"
   integrity sha512-eHgt/MA8y5ZF0aHfZ1aTPcIkDWxza9AaEk4GcpIX+ZYfZ04RcaNahO+527KR7J44/mD3efYfM23O2C1N44ByWA==
 
-react-native-bootpay-api@5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/react-native-bootpay-api/-/react-native-bootpay-api-5.0.0.tgz#ffb316ca1f4267804ca01e6c42eb175a95387032"
-  integrity sha512-tu6BDxDruam6cM7KiB6nN9ZGHLRXbdfDOe/WZXPv06Cq7nE83er1vZkQUhGwJjV+5qj+gi0yuPuumN9qdgPUHQ==
+react-native-bootpay-api@5.0.25:
+  version "5.0.25"
+  resolved "https://registry.yarnpkg.com/react-native-bootpay-api/-/react-native-bootpay-api-5.0.25.tgz#f2f316c79398c5f5eee400793a8d89f78e051634"
+  integrity sha512-UgvnlWIPKvKZue7m9AyFY2jWi3FXgTfha11vnJvR64/d1UO6cBRjGi8PGDDtDOyvVrhAUx8wBLG44naPJFdAVQ==
   dependencies:
     escape-string-regexp "2.0.0"
     invariant "2.2.4"
+    react-native-webview-bootpay "13.6.0"
 
 react-native-codegen@^0.0.17:
   version "0.0.17"
