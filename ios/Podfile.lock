@@ -286,7 +286,9 @@ PODS:
     - React-Core
   - react-native-sensitive-info (5.5.8):
     - React
-  - react-native-webview-bootpay (13.6.0):
+  - react-native-webview (13.6.3):
+    - React-Core
+  - react-native-webview-bootpay (13.6.1):
     - React-Core
   - React-perflogger (0.68.2)
   - React-RCTActionSheet (0.68.2):
@@ -405,6 +407,7 @@ DEPENDENCIES:
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - react-native-aes (from `../node_modules/react-native-aes-crypto`)
   - react-native-sensitive-info (from `../node_modules/react-native-sensitive-info`)
+  - react-native-webview (from `../node_modules/react-native-webview`)
   - react-native-webview-bootpay (from `../node_modules/react-native-webview-bootpay`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
@@ -480,6 +483,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-aes-crypto"
   react-native-sensitive-info:
     :path: "../node_modules/react-native-sensitive-info"
+  react-native-webview:
+    :path: "../node_modules/react-native-webview"
   react-native-webview-bootpay:
     :path: "../node_modules/react-native-webview-bootpay"
   React-perflogger:
@@ -545,7 +550,8 @@ SPEC CHECKSUMS:
   React-logger: a0833912d93b36b791b7a521672d8ee89107aff1
   react-native-aes: c75c46aa744bef7c2415fdf7f5b2dcb75ca4364d
   react-native-sensitive-info: 400c6e3d27945e15c8cddb5b4b92233c85ee06f8
-  react-native-webview-bootpay: 166a28a871e77cda31af14b494147ef0a821be01
+  react-native-webview: 88293a0f23eca8465c0433c023ec632930e644d0
+  react-native-webview-bootpay: 9d057ffbd67629bff687cba98a6889945b4c2584
   React-perflogger: a18b4f0bd933b8b24ecf9f3c54f9bf65180f3fe6
   React-RCTActionSheet: 547fe42fdb4b6089598d79f8e1d855d7c23e2162
   React-RCTAnimation: bc9440a1c37b06ae9ebbb532d244f607805c6034

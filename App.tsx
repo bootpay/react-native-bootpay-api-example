@@ -7,6 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 import { Bootpay, Extra, User } from 'react-native-bootpay-api'; 
+import WebView from 'react-native-webview';
 
 
 export default function App() {
@@ -171,7 +172,8 @@ export default function App() {
   }
 
   const onConfirm = (data: Object) => {
-    console.log('-- confirm', data); 
+    console.log('-- confirm', data);
+    // if(bootpay != null && bootpay.current != null) bootpay.current.transactionConfirm(data); //
     return true 
   }
 
@@ -210,6 +212,7 @@ export default function App() {
         onClose={onClose} 
 
       /> 
+ 
     
       <TouchableOpacity
           style={styles.button}

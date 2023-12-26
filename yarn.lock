@@ -5471,14 +5471,13 @@ react-native-base64@^0.2.1:
   resolved "https://registry.npmjs.org/react-native-base64/-/react-native-base64-0.2.1.tgz"
   integrity sha512-eHgt/MA8y5ZF0aHfZ1aTPcIkDWxza9AaEk4GcpIX+ZYfZ04RcaNahO+527KR7J44/mD3efYfM23O2C1N44ByWA==
 
-react-native-bootpay-api@5.0.25:
-  version "5.0.25"
-  resolved "https://registry.yarnpkg.com/react-native-bootpay-api/-/react-native-bootpay-api-5.0.25.tgz#f2f316c79398c5f5eee400793a8d89f78e051634"
-  integrity sha512-UgvnlWIPKvKZue7m9AyFY2jWi3FXgTfha11vnJvR64/d1UO6cBRjGi8PGDDtDOyvVrhAUx8wBLG44naPJFdAVQ==
+react-native-bootpay-api@5.0.3:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/react-native-bootpay-api/-/react-native-bootpay-api-5.0.3.tgz#8cb5634ab87bfe1fbb0c447944b09f5908c992f0"
+  integrity sha512-C0RJLDb2ZlnAiRpokp2fbh9LTvITEHFjBJR9kst9t6ejKNrVSzeJYJMIZJ5r1nIQXkoiRBHHQ6habxudeZhD3A==
   dependencies:
     escape-string-regexp "2.0.0"
     invariant "2.2.4"
-    react-native-webview-bootpay "13.6.0"
 
 react-native-codegen@^0.0.17:
   version "0.0.17"
@@ -5505,10 +5504,18 @@ react-native-sensitive-info@^5.5.8:
   resolved "https://registry.npmjs.org/react-native-sensitive-info/-/react-native-sensitive-info-5.5.8.tgz"
   integrity sha512-p99oaEW4QG1RdUNrkvd/c6Qdm856dQw/Rk81f9fA6Y3DlPs6ADNdU+jbPuTz3CcOUJwuKBDNenX6LR9KfmGFEg==
 
-react-native-webview-bootpay@13.6.0:
-  version "13.6.0"
-  resolved "https://registry.yarnpkg.com/react-native-webview-bootpay/-/react-native-webview-bootpay-13.6.0.tgz#81957bf036a74e910d53575a7567f5f725c833ca"
-  integrity sha512-roZoEooJemTGOzPkrbn5ZTUCkYNq69GblNURjjqOt8VXyBj4aS7WS7X4MaGt9RNKVSVPoY5ZVvnRUHLdhYo2Pg==
+react-native-webview-bootpay@13.6.1:
+  version "13.6.1"
+  resolved "https://registry.yarnpkg.com/react-native-webview-bootpay/-/react-native-webview-bootpay-13.6.1.tgz#945e13756f2a96e83edeb507036e7bdfb68017de"
+  integrity sha512-qa3MH6/apTI1OLWLOLHiUnB1IufE98EM8nRGLSCZ8LYfotMWUP286veM3Ewm0X8Eahj6L5Q4x8RlgUxDsvciUw==
+  dependencies:
+    escape-string-regexp "2.0.0"
+    invariant "2.2.4"
+
+react-native-webview@13.6.3:
+  version "13.6.3"
+  resolved "https://registry.yarnpkg.com/react-native-webview/-/react-native-webview-13.6.3.tgz#f3d26e942ef5cc5a07547f2e47903aa81a68e25e"
+  integrity sha512-IApO0JSj0uAWsBGKWagyfgDYoX29piiMYLmkHtRjKeL1rIVjLoR/bMe7KJ/0X47y86b//a6u3cYQtphyay+F2A==
   dependencies:
     escape-string-regexp "2.0.0"
     invariant "2.2.4"
