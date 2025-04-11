@@ -3009,13 +3009,13 @@ __metadata:
     react: 18.3.1
     react-native: 0.76.3
     react-native-aes-crypto: ^3.2.1
-    react-native-bootpay-api: ^13.13.41
+    react-native-bootpay-api: ^13.13.42
     react-native-device-info: ^14.0.4
     react-native-keychain: ^10.0.0
     react-native-safe-area-context: ^5.3.0
     react-native-screens: ^4.10.0
     react-native-webview: ^13.13.5
-    react-native-webview-bootpay: ^13.13.43
+    react-native-webview-bootpay: 13.13.44
     react-test-renderer: 18.3.1
     typescript: 5.0.4
   languageName: unknown
@@ -3690,9 +3690,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001688":
-  version: 1.0.30001712
-  resolution: "caniuse-lite@npm:1.0.30001712"
-  checksum: 83760e735d1d7ab9ff7270747d70b71da4341bdc1c90df9fe2008ada382653e13d7501bfd7068e1d835184b03b8ac598b127bfe3e7d53419b9d7827730b4ae1a
+  version: 1.0.30001713
+  resolution: "caniuse-lite@npm:1.0.30001713"
+  checksum: 45fd9ae77965a694818d495671ba3e9a87e4eed063824b2244c0b83b1ab0ba2d8e71dcd45441f638caadf8f0c99e154a4326bbef5c291327090cdc38feeda6fd
   languageName: node
   linkType: hard
 
@@ -8116,9 +8116,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-bootpay-api@npm:^13.13.41":
-  version: 13.13.41
-  resolution: "react-native-bootpay-api@npm:13.13.41"
+"react-native-bootpay-api@npm:^13.13.42":
+  version: 13.13.42
+  resolution: "react-native-bootpay-api@npm:13.13.42"
   dependencies:
     "@types/react-native-base64": ^0.2.2
     escape-string-regexp: ^4.0.0
@@ -8126,11 +8126,11 @@ __metadata:
     react-native-aes-crypto: ^3.2.1
     react-native-device-info: ^14.0.4
     react-native-keychain: ^10.0.0
-    react-native-webview-bootpay: ^13.13.423
+    react-native-webview-bootpay: 13.13.44
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 45e42485fbc3694d8a0d4f3ef70e24a483e488739b53b48fee713201e64f3cfba1ba28bdae953145e88f19ca4f16afdc8ef55518fa5f9d23249e472a8f601d6b
+  checksum: 8eedae043e29511545257cce92037448c8cfc75e4077158898cd37f08917b6ece2e0795aad9940fd80bebb480427b345d9fea47d39175c329633f51d7c54fbee
   languageName: node
   linkType: hard
 
@@ -8173,16 +8173,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-webview-bootpay@npm:^13.13.423, react-native-webview-bootpay@npm:^13.13.43":
-  version: 13.13.423
-  resolution: "react-native-webview-bootpay@npm:13.13.423"
+"react-native-webview-bootpay@npm:13.13.44":
+  version: 13.13.44
+  resolution: "react-native-webview-bootpay@npm:13.13.44"
   dependencies:
     escape-string-regexp: ^4.0.0
     invariant: 2.2.4
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 5ec3f143f1ea411b36a3fde1939d8c1b75be2a165e0b74bd5e314fb3834faba14135f82ba8b6aff55a759cf21a00dc59903fa565ee62bbbd5dd0d94f6b533b55
+  checksum: d9de4b67685d45529d1658c7614cb7614491fe2f6071ff84c21fd449d222b36fa5f27cef6e951088f26aff23a9ad2369289dd34a9b0f11b172e4f861287d1449
   languageName: node
   linkType: hard
 
