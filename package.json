@@ -16,13 +16,12 @@
     "react": "18.3.1",
     "react-native": "0.76.3",
     "react-native-aes-crypto": "^3.2.1",
-    "react-native-bootpay-api": "^13.13.42",
+    "react-native-bootpay-api": "^13.14.0",
     "react-native-device-info": "^14.0.4",
     "react-native-keychain": "^10.0.0",
     "react-native-safe-area-context": "^5.3.0",
     "react-native-screens": "^4.10.0",
-    "react-native-webview": "^13.13.5",
-    "react-native-webview-bootpay": "13.13.44"
+    "react-native-webview-bootpay": "file:../react-native-webview-bootpay"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -51,5 +50,8 @@
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "yarn@3.6.4"
+  "packageManager": "yarn@3.6.4",
+  "resolutions": {
+    "react-native-webview-bootpay": "file:../react-native-webview-bootpay"
+  }
 }

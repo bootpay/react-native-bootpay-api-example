@@ -1244,7 +1244,7 @@ PODS:
     - Yoga
   - react-native-aes (3.2.1):
     - React-Core
-  - react-native-bootpay-api (13.13.42):
+  - react-native-bootpay-api (13.14.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1331,28 +1331,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - react-native-webview (13.13.5):
-    - DoubleConversion
-    - glog
-    - hermes-engine
-    - RCT-Folly (= 2024.01.01.00)
-    - RCTRequired
-    - RCTTypeSafety
-    - React-Core
-    - React-debug
-    - React-Fabric
-    - React-featureflags
-    - React-graphics
-    - React-ImageManager
-    - React-NativeModulesApple
-    - React-RCTFabric
-    - React-rendererdebug
-    - React-utils
-    - ReactCodegen
-    - ReactCommon/turbomodule/bridging
-    - ReactCommon/turbomodule/core
-    - Yoga
-  - react-native-webview-bootpay (13.13.44):
+  - react-native-webview-bootpay (13.13.50):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1752,7 +1731,6 @@ DEPENDENCIES:
   - react-native-aes (from `../node_modules/react-native-aes-crypto`)
   - react-native-bootpay-api (from `../node_modules/react-native-bootpay-api`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
-  - react-native-webview (from `../node_modules/react-native-webview`)
   - react-native-webview-bootpay (from `../node_modules/react-native-webview-bootpay`)
   - React-nativeconfig (from `../node_modules/react-native/ReactCommon`)
   - React-NativeModulesApple (from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
@@ -1868,8 +1846,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-bootpay-api"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
-  react-native-webview:
-    :path: "../node_modules/react-native-webview"
   react-native-webview-bootpay:
     :path: "../node_modules/react-native-webview-bootpay"
   React-nativeconfig:
@@ -1972,10 +1948,9 @@ SPEC CHECKSUMS:
   React-Mapbuffer: bd6a2ffbf401f11cfc8b5e8f38acab9fe117620c
   React-microtasksnativemodule: 2fa3b8c7a876b84bd8166f11e07f101929a87f97
   react-native-aes: e38d08f68d27e85d14590b7ef0b404ceebf5f891
-  react-native-bootpay-api: 67a66a021cc1ab77d85bdb90ecda08ba42b1dbcb
+  react-native-bootpay-api: 7fa1f532dbaf9e5c54d9326f6133e28242c416d4
   react-native-safe-area-context: 1550432038745277e5ce44b4be1abb94306d8f68
-  react-native-webview: cb6ca8e0928ef826bdf061a39b7db56ab4d4d480
-  react-native-webview-bootpay: ec5b0bae9bbbd45f0a3dfd999a7cc3e2050209b0
+  react-native-webview-bootpay: 48c55fd540ba351dd1662d3cb0f945340deab6c9
   React-nativeconfig: aeed6e2a8ac02b2df54476afcc7c663416c12bf7
   React-NativeModulesApple: c0783e5e21c71aa2764ac33120abc96208466fa6
   React-perflogger: 2991d4258277af250eb7a2705980ebb3ef9ba85e

@@ -1574,6 +1574,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@egjs/hammerjs@npm:^2.0.17":
+  version: 2.0.17
+  resolution: "@egjs/hammerjs@npm:2.0.17"
+  dependencies:
+    "@types/hammerjs": ^2.0.36
+  checksum: 8945137cec5837edd70af3f2e0ea621543eb0aa3b667e6269ec6485350f4d120c2434b37c7c30b1cf42a65275dd61c1f24626749c616696d3956ac0c008c4766
+  languageName: node
+  linkType: hard
+
 "@eslint-community/eslint-utils@npm:^4.2.0, @eslint-community/eslint-utils@npm:^4.4.0":
   version: 4.5.1
   resolution: "@eslint-community/eslint-utils@npm:4.5.1"
@@ -2669,6 +2678,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/hammerjs@npm:^2.0.36":
+  version: 2.0.46
+  resolution: "@types/hammerjs@npm:2.0.46"
+  checksum: caba6ec788d19905c71092670b58514b3d1f5eee5382bf9205e8df688d51e7857b7994e2dd7aed57fac8977bdf0e456d67fbaf23440a4385b8ce25fe2af1ec39
+  languageName: node
+  linkType: hard
+
 "@types/istanbul-lib-coverage@npm:*, @types/istanbul-lib-coverage@npm:^2.0.0, @types/istanbul-lib-coverage@npm:^2.0.1":
   version: 2.0.6
   resolution: "@types/istanbul-lib-coverage@npm:2.0.6"
@@ -3009,13 +3025,12 @@ __metadata:
     react: 18.3.1
     react-native: 0.76.3
     react-native-aes-crypto: ^3.2.1
-    react-native-bootpay-api: ^13.13.42
+    react-native-bootpay-api: ^13.14.0
     react-native-device-info: ^14.0.4
     react-native-keychain: ^10.0.0
     react-native-safe-area-context: ^5.3.0
     react-native-screens: ^4.10.0
-    react-native-webview: ^13.13.5
-    react-native-webview-bootpay: 13.13.44
+    react-native-webview-bootpay: "file:../react-native-webview-bootpay"
     react-test-renderer: 18.3.1
     typescript: 5.0.4
   languageName: unknown
@@ -5412,6 +5427,15 @@ __metadata:
   dependencies:
     hermes-estree: 0.25.1
   checksum: 4edcfaa3030931343b540182b83c432aba4cdcb1925952521ab4cfb7ab90c2c1543dfcb042ccd51d5e81e4bfe2809420e85902c2ff95ef7c6c64644ce17138ea
+  languageName: node
+  linkType: hard
+
+"hoist-non-react-statics@npm:^3.3.0":
+  version: 3.3.2
+  resolution: "hoist-non-react-statics@npm:3.3.2"
+  dependencies:
+    react-is: ^16.7.0
+  checksum: b1538270429b13901ee586aa44f4cc3ecd8831c061d06cb8322e50ea17b3f5ce4d0e2e66394761e6c8e152cd8c34fb3b4b690116c6ce2bd45b18c746516cb9e8
   languageName: node
   linkType: hard
 
@@ -8095,7 +8119,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is@npm:^16.13.1":
+"react-is@npm:^16.13.1, react-is@npm:^16.7.0":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
@@ -8116,21 +8140,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-bootpay-api@npm:^13.13.42":
-  version: 13.13.42
-  resolution: "react-native-bootpay-api@npm:13.13.42"
+"react-native-bootpay-api@npm:^13.14.0":
+  version: 13.14.0
+  resolution: "react-native-bootpay-api@npm:13.14.0"
   dependencies:
     "@types/react-native-base64": ^0.2.2
     escape-string-regexp: ^4.0.0
     invariant: 2.2.4
     react-native-aes-crypto: ^3.2.1
-    react-native-device-info: ^14.0.4
+    react-native-device-info: ^15.0.1
+    react-native-gesture-handler: ^2.20.0
     react-native-keychain: ^10.0.0
-    react-native-webview-bootpay: 13.13.44
+    react-native-webview-bootpay: 13.13.50
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 8eedae043e29511545257cce92037448c8cfc75e4077158898cd37f08917b6ece2e0795aad9940fd80bebb480427b345d9fea47d39175c329633f51d7c54fbee
+  checksum: 5abd61a871a117ab3f15615d10c32c9d3df963e8ddecd154689f02f09d532051dd47ad984f0d2af2317a30c91fd2b354a9cd295756cc299a1f0144743f157c9e
   languageName: node
   linkType: hard
 
@@ -8140,6 +8165,29 @@ __metadata:
   peerDependencies:
     react-native: "*"
   checksum: aa839dbe7df1246a4b5f9bcfeb3d4cc4be585f13a0d3ff6a03f57a0c2cfe7590291ac292dda4c51fd8765f94c870857676463e8e2f1660b057f3ae2b4335db29
+  languageName: node
+  linkType: hard
+
+"react-native-device-info@npm:^15.0.1":
+  version: 15.0.2
+  resolution: "react-native-device-info@npm:15.0.2"
+  peerDependencies:
+    react-native: "*"
+  checksum: 932ec7ccfc885aeb39c455b31c55a1b345bd6fcfc8cf22f63fff88f42aefc82bf44e4b05daeaaa1231c4ea8590f25740ce6a0f38bc24a5c89d68702de832e8d6
+  languageName: node
+  linkType: hard
+
+"react-native-gesture-handler@npm:^2.20.0":
+  version: 2.30.0
+  resolution: "react-native-gesture-handler@npm:2.30.0"
+  dependencies:
+    "@egjs/hammerjs": ^2.0.17
+    hoist-non-react-statics: ^3.3.0
+    invariant: ^2.2.4
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 130a1cc04879ea11808472dbe2f4e346baca0cb52713279f3d4b5fbd397324bef2379f1f60bf0ce1763e12a8656267abb0e879418fb37c81fc6bbdcdb7fc797d
   languageName: node
   linkType: hard
 
@@ -8173,29 +8221,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-webview-bootpay@npm:13.13.44":
-  version: 13.13.44
-  resolution: "react-native-webview-bootpay@npm:13.13.44"
+"react-native-webview-bootpay@file:../react-native-webview-bootpay::locator=ReactNativeExample%40workspace%3A.":
+  version: 13.13.50
+  resolution: "react-native-webview-bootpay@file:../react-native-webview-bootpay#../react-native-webview-bootpay::hash=9af18c&locator=ReactNativeExample%40workspace%3A."
   dependencies:
     escape-string-regexp: ^4.0.0
     invariant: 2.2.4
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: d9de4b67685d45529d1658c7614cb7614491fe2f6071ff84c21fd449d222b36fa5f27cef6e951088f26aff23a9ad2369289dd34a9b0f11b172e4f861287d1449
-  languageName: node
-  linkType: hard
-
-"react-native-webview@npm:^13.13.5":
-  version: 13.13.5
-  resolution: "react-native-webview@npm:13.13.5"
-  dependencies:
-    escape-string-regexp: ^4.0.0
-    invariant: 2.2.4
-  peerDependencies:
-    react: "*"
-    react-native: "*"
-  checksum: 7f3bce1b37d6be9b2f07f0f7481181d5344f9e58022645b0d20dc58cd66056bb6efecacb231963959db6283cc66d977593db62a403c7c151f83568f83041c2eb
+  checksum: 6ae1ff2db2eb02109e568de7ddcd65fdadc7f9a023d6534e401a08c173d73580a90f781da856d02d8aa867df732d376b9c9513ead4adf7370a19618529eaba2d
   languageName: node
   linkType: hard
 
