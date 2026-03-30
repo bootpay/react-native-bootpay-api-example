@@ -1,8 +1,3 @@
-#require_relative '../node_modules/react-native/scripts/react_native_pods'
-#require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
-#
-#ENV['RCT_NEW_ARCH_ENABLED'] = '1'
-
 # Resolve react_native_pods.rb with node to allow for hoisting
 require Pod::Executable.execute_command('node', ['-p',
   'require.resolve(
@@ -24,7 +19,6 @@ target 'ReactNativeExample' do
 
   use_react_native!(
     :path => config[:reactNativePath],
-    :hermes_enabled => true,
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
@@ -38,6 +32,36 @@ target 'ReactNativeExample' do
       config[:reactNativePath],
       :mac_catalyst_enabled => false
     )
-    # M1 맥 관련 workaround가 이제 필요 없음
+
+    # Xcode 26 requires code signing for all targets including Pods
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |bc|
+        bc.build_settings['CODE_SIGN_IDENTITY'] = '-'
+      end
+    end
+
+    # Disable folly coroutines — coro sources are not shipped with RCT-Folly pod
+    # but Xcode 26 compiler enables __cpp_impl_coroutine, causing FOLLY_HAS_COROUTINES=1
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |bc|
+        existing = bc.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] || ['$(inherited)']
+        unless existing.include?('FOLLY_CFG_NO_COROUTINES=1')
+          existing << 'FOLLY_CFG_NO_COROUTINES=1'
+          bc.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] = existing
+        end
+      end
+    end
+
+    # Also patch xcconfig files so the definition is not overridden
+    Dir.glob(File.join(installer.sandbox.root, 'Target Support Files', '**', '*.xcconfig')).each do |xcconfig_path|
+      xcconfig = File.read(xcconfig_path)
+      unless xcconfig.include?('FOLLY_CFG_NO_COROUTINES')
+        xcconfig = xcconfig.gsub(
+          /^(GCC_PREPROCESSOR_DEFINITIONS = .*)$/,
+          '\1 FOLLY_CFG_NO_COROUTINES=1'
+        )
+        File.write(xcconfig_path, xcconfig)
+      end
+    end
   end
 end
