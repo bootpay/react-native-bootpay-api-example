@@ -5,6 +5,7 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 type RootStackParamList = {
   Home: undefined;
   BootpayTest: undefined;
+  BootpayWidgetTest: undefined;
   WebViewTest: undefined;
 };
 
@@ -22,6 +23,13 @@ export default function HomeScreen({ navigation }: HomeScreenProps) {
         <Text>부트페이 테스트</Text>
       </TouchableOpacity>
       
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate('BootpayWidgetTest')}
+      >
+        <Text>위젯 결제 테스트</Text>
+      </TouchableOpacity>
+
       <TouchableOpacity
         style={styles.button}
         onPress={() => navigation.navigate('WebViewTest')}
