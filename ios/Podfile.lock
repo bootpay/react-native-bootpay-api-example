@@ -1750,7 +1750,7 @@ PODS:
     - SocketRocket
   - react-native-aes (3.3.0):
     - React-Core
-  - react-native-bootpay-api (13.14.2):
+  - react-native-bootpay-api (13.14.4):
     - boost
     - DoubleConversion
     - fast_float
@@ -2398,7 +2398,7 @@ PODS:
     - React-perflogger (= 0.81.5)
     - React-utils (= 0.81.5)
     - SocketRocket
-  - RNDeviceInfo (14.1.1):
+  - RNDeviceInfo (15.0.2):
     - React-Core
   - RNGestureHandler (2.30.1):
     - boost
@@ -2808,7 +2808,7 @@ SPEC CHECKSUMS:
   React-Mapbuffer: 94f4264de2cb156960cd82b338a403f4653f2fd9
   React-microtasksnativemodule: 6c4ee39a36958c39c97b074d28f360246a335e84
   react-native-aes: 0cad0a1f0087171b4af762c39d7199716d9335b5
-  react-native-bootpay-api: 0cfd7869e3caeb80c535a0f21f3b80aca5c56af0
+  react-native-bootpay-api: 9547cfe7a9335ad5beea55a5c30912afd263e5c7
   react-native-safe-area-context: befb5404eb8a16fdc07fa2bebab3568ecabcbb8a
   react-native-webview-bootpay: c01bd2c24d8c0f79b8865dea52390bcca69fbba9
   React-NativeModulesApple: ebf2ce72b35870036900d6498b33724386540a71
@@ -2841,7 +2841,7 @@ SPEC CHECKSUMS:
   ReactAppDependencyProvider: 1bcd3527ac0390a1c898c114f81ff954be35ed79
   ReactCodegen: 6c26f8c25d0b5ae66f86a1cce1777076ac8bcbd8
   ReactCommon: 5f0e5c09a64a2717215dd84380e1a747810406f2
-  RNDeviceInfo: bcce8752b5043a623fe3c26789679b473f705d3c
+  RNDeviceInfo: 4c852998208b60dc192ae3529e5867817719ad1e
   RNGestureHandler: 1e48679ce8c172831ade9698caaf773c1554d3dc
   RNKeychain: a2c134ab796272c3d605e035ab727591000b30f3
   RNScreens: 7f643ee0fd1407dc5085c7795460bd93da113b8f
