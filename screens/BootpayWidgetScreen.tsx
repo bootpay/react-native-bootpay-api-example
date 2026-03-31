@@ -12,6 +12,11 @@ import {
   WidgetPayload,
   WidgetData,
 } from 'react-native-bootpay-api';
+import {
+  ANDROID_APPLICATION_ID,
+  CLIENT_KEY,
+  IOS_APPLICATION_ID,
+} from '../utils/BootpayConfig';
 
 const ORDER_NAME = '테스트 상품';
 const PRICE = 1000;
@@ -161,8 +166,9 @@ export default function BootpayWidgetScreen() {
       {/* BootpayWidget */}
       <BootpayWidget
         ref={bootpayWidget}
-        ios_application_id={'5b8f6a4d396fa665fdc2b5e9'}
-        android_application_id={'5b8f6a4d396fa665fdc2b5e8'}
+        ios_application_id={IOS_APPLICATION_ID}
+        android_application_id={ANDROID_APPLICATION_ID}
+        client_key={CLIENT_KEY}
         height={widgetHeight}
         widgetTop={widgetTop}
         onWidgetReady={onWidgetReady}

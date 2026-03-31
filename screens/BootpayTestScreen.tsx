@@ -7,6 +7,11 @@ import {
   TouchableOpacity
 } from 'react-native';
 import { Bootpay, Extra, User } from 'react-native-bootpay-api'; 
+import {
+  ANDROID_APPLICATION_ID,
+  CLIENT_KEY,
+  IOS_APPLICATION_ID,
+} from '../utils/BootpayConfig';
 // import WebView from 'react-native-webview';
 
 
@@ -199,10 +204,9 @@ export default function App() {
 
       <Bootpay 
         ref={bootpay}
-        ios_application_id={'5b8f6a4d396fa665fdc2b5e9'}
-        android_application_id={'5b8f6a4d396fa665fdc2b5e8'} 
-        // ios_application_id={'5b9f51264457636ab9a07cdd'}
-        // android_application_id={'5b9f51264457636ab9a07cdc'} 
+        ios_application_id={IOS_APPLICATION_ID}
+        android_application_id={ANDROID_APPLICATION_ID}
+        client_key={CLIENT_KEY}
         onCancel={onCancel}
         onError={onError}
         onIssued={onIssued}
