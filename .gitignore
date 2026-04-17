@@ -2,6 +2,10 @@
 #
 .DS_Store
 
+# Bootpay 환경 키
+.env
+!.env.example
+
 # Xcode
 #
 build/

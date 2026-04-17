@@ -1,11 +1,21 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import {
+  StyleSheet,
+  View,
+  Text,
+  TouchableOpacity,
+  ScrollView,
+} from 'react-native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 type RootStackParamList = {
   Home: undefined;
-  BootpayTest: undefined;
-  BootpayWidgetTest: undefined;
+  DefaultPayment: undefined;
+  TotalPayment: undefined;
+  Subscription: undefined;
+  Authentication: undefined;
+  WidgetPayment: undefined;
+  Commerce: undefined;
   WebViewTest: undefined;
 };
 
@@ -13,29 +23,43 @@ type HomeScreenProps = {
   navigation: NativeStackNavigationProp<RootStackParamList, 'Home'>;
 };
 
+interface MenuItem {
+  number: number;
+  title: string;
+  route: keyof RootStackParamList;
+}
+
+const MENU_ITEMS: MenuItem[] = [
+  { number: 1, title: 'PG 일반 결제 테스트', route: 'DefaultPayment' },
+  { number: 2, title: '통합결제 테스트', route: 'TotalPayment' },
+  { number: 3, title: '카드자동 결제 테스트 (인증)', route: 'Subscription' },
+  { number: 4, title: '본인인증 테스트', route: 'Authentication' },
+  { number: 5, title: '위젯 결제 테스트', route: 'WidgetPayment' },
+  { number: 6, title: 'Commerce 결제 테스트', route: 'Commerce' },
+  { number: 7, title: '웹뷰 테스트', route: 'WebViewTest' },
+];
+
 export default function HomeScreen({ navigation }: HomeScreenProps) {
   return (
     <View style={styles.container}>
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate('BootpayTest')}
-      >
-        <Text>부트페이 테스트</Text>
-      </TouchableOpacity>
-      
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate('BootpayWidgetTest')}
-      >
-        <Text>위젯 결제 테스트</Text>
-      </TouchableOpacity>
+      <View style={styles.headerSection}>
+        <Text style={styles.title}>Bootpay 결제 테스트</Text>
+        <Text style={styles.subtitle}>테스트할 결제 방식을 선택하세요</Text>
+      </View>
 
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate('WebViewTest')}
-      >
-        <Text>웹뷰 테스트</Text>
-      </TouchableOpacity>
+      <ScrollView style={styles.menuList} contentContainerStyle={styles.menuListContent}>
+        {MENU_ITEMS.map((item) => (
+          <TouchableOpacity
+            key={item.route}
+            style={styles.menuButton}
+            onPress={() => navigation.navigate(item.route as never)}
+          >
+            <Text style={styles.menuButtonText}>
+              {item.number}. {item.title}
+            </Text>
+          </TouchableOpacity>
+        ))}
+      </ScrollView>
     </View>
   );
 }
@@ -43,14 +67,42 @@ export default function HomeScreen({ navigation }: HomeScreenProps) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#fff',
   },
-  button: {
+  headerSection: {
+    paddingTop: 24,
+    paddingHorizontal: 24,
+    paddingBottom: 24,
     alignItems: 'center',
-    backgroundColor: '#DDDDDD',
-    padding: 10,
-    margin: 10,
-    width: 200,
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#333',
+    marginBottom: 8,
+  },
+  subtitle: {
+    fontSize: 14,
+    color: '#666',
+  },
+  menuList: {
+    flex: 1,
+  },
+  menuListContent: {
+    paddingHorizontal: 24,
+    paddingBottom: 24,
+  },
+  menuButton: {
+    paddingHorizontal: 20,
+    paddingVertical: 18,
+    borderWidth: 1,
+    borderColor: '#ddd',
+    borderRadius: 12,
+    marginBottom: 12,
+  },
+  menuButtonText: {
+    fontSize: 16,
+    fontWeight: '500',
+    color: '#333',
   },
 });
