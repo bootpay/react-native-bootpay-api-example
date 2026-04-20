@@ -28,6 +28,7 @@ DerivedData
 # Android/IntelliJ
 #
 build/
+.cxx/
 .idea
 .gradle
 local.properties
@@ -40,6 +41,7 @@ node_modules/
 npm-debug.log
 yarn-error.log
 .yarn/cache/
+package-lock.json
 
 # BUCK
 buck-out/
