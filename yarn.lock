@@ -2881,14 +2881,14 @@ __metadata:
     react: 19.1.0
     react-native: 0.81.5
     react-native-aes-crypto: ^3.2.1
-    react-native-bootpay-api: ^13.14.4
+    react-native-bootpay-api: "portal:../react-native-bootpay-api"
     react-native-device-info: ^15.0.1
     react-native-dotenv: ^3.4.11
     react-native-gesture-handler: ^2.20.0
     react-native-keychain: ^10.0.0
     react-native-safe-area-context: ^5.3.0
     react-native-screens: ^4.10.0
-    react-native-webview-bootpay: ^13.14.3
+    react-native-webview-bootpay: ^13.14.4
     typescript: 5.0.4
   languageName: unknown
   linkType: soft
@@ -7679,9 +7679,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-bootpay-api@npm:^13.14.4":
-  version: 13.14.4
-  resolution: "react-native-bootpay-api@npm:13.14.4"
+"react-native-bootpay-api@portal:../react-native-bootpay-api::locator=ReactNativeExample%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "react-native-bootpay-api@portal:../react-native-bootpay-api::locator=ReactNativeExample%40workspace%3A."
   dependencies:
     "@types/react-native-base64": ^0.2.2
     escape-string-regexp: ^4.0.0
@@ -7690,13 +7690,12 @@ __metadata:
     react-native-device-info: ^15.0.1
     react-native-gesture-handler: ^2.20.0
     react-native-keychain: ^10.0.0
-    react-native-webview-bootpay: 13.14.1
+    react-native-webview-bootpay: 13.14.4
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 60bb320a89881af4b5e593a084ada34d10d80a072f8796ecc140f852612408318751e2a6c33a569415e56b0fd949d06b850031169a6ac9d2e7e3fb39bbb267c0
   languageName: node
-  linkType: hard
+  linkType: soft
 
 "react-native-device-info@npm:^15.0.1":
   version: 15.0.2
@@ -7763,16 +7762,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-webview-bootpay@npm:13.14.3":
-  version: 13.14.3
-  resolution: "react-native-webview-bootpay@npm:13.14.3"
+"react-native-webview-bootpay@npm:13.14.4":
+  version: 13.14.4
+  resolution: "react-native-webview-bootpay@npm:13.14.4"
   dependencies:
     escape-string-regexp: ^4.0.0
     invariant: 2.2.4
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 19a6f111ef2c9615c4572ef2dbf6efc1bbe8f49d48c25dac0a4b581a9f5af22352be5fdea96451dc0aa80e5b37cf325f365af25766f319f57f3d06b40606b3b1
+  checksum: 136570dddccdb79ff8f19c65b6af69ac70a57b2eee73a043bcc148a0a6e0b717dc23f97443acaa4129b60f5d8e74d14694012a869b084035c828f27027917249
   languageName: node
   linkType: hard
 
