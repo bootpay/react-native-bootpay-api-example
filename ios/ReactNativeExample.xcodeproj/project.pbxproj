@@ -504,7 +504,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.bootpay.reactTest;
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.bootpay.Bootpay-Example";
 				PRODUCT_NAME = ReactNativeExample;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
