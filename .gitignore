@@ -65,3 +65,6 @@ buck-out/
 # Ruby / CocoaPods
 /ios/Pods/
 /vendor/bundle/
+
+# omj automation runtime
+.omj/
